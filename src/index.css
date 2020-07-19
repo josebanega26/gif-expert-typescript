@@ -12,7 +12,15 @@ code {
     monospace;
 }
 .container{
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  padding: 0 4rem;
+}
+input{
+  margin-bottom: 0.5rem;
+  padding:0.5rem ;
+  width:100%;
+  outline: none;
 }
 footer{
   display: flex;

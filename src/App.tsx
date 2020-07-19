@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from './Components/Footer';
-import './App.css';
+import AddCategory from './Components/AddCategory';
+import CategoriesList from './Components/CategoriesList';
 
 function App() {
+  const [categories, setCategories] = useState(['Star wars', 'Lord of rings']);
+
   return (
     <>
       <div className='container'>
-        body
+        <h2>Gif Expert App</h2>
+        <AddCategory setCategories={setCategories}></AddCategory>
+        <CategoriesList data={categories} />
       </div>
       <Footer></Footer>
     </>
