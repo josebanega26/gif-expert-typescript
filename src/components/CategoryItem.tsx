@@ -6,7 +6,7 @@ interface CategoryItemProps {
 }
 const CategoryItem = ({ item }: CategoryItemProps) => {
   return (
-    <div id={item.id}>
+    <div className='categoryItem--container' id={item.id}>
       <img src={item.img} alt={item.title} />
       <p>{item.title}</p>
     </div>

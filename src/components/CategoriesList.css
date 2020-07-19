@@ -2,5 +2,5 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 10px;
+    gap: 5px;
 }

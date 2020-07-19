@@ -15,7 +15,7 @@ const AddCategory = ({ setCategories }: AddCategoryProps) => {
     if (input.trim().length < 1) {
       return;
     }
-    setCategories((oldCateogries: any[]) => [...oldCateogries, input]);
+    setCategories((oldCateogries: any[]) => [input, ...oldCateogries]);
     setInput('');
   };
   return (

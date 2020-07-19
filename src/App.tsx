@@ -4,7 +4,7 @@ import AddCategory from './components/AddCategory';
 import CategoriesList from './components/CategoriesList';
 
 const App = () => {
-  const [categories, setCategories] = useState(['Star wars', 'another movie']);
+  const [categories, setCategories] = useState([]);
 
   return (
     <>

@@ -23,7 +23,6 @@ const Categories = ({ categoryTitle }: CategoriesProps) => {
         img: images?.downsized_medium.url,
       }));
       setCategoryData(gifList);
-      console.log('gifList', gifList);
     } catch (error) {
       console.log('error', error);
     }

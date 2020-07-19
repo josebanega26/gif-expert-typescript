@@ -1,0 +1,12 @@
+.categoryItem--container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+.categoryItem--container img{
+    width: 100%;
+    max-height: 300px;
+}
