@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
-import Footer from './Components/Footer';
-import AddCategory from './Components/AddCategory';
-import CategoriesList from './Components/CategoriesList';
+import Footer from './components/Footer';
+import AddCategory from './components/AddCategory';
+import CategoriesList from './components/CategoriesList';
 
-function App() {
-  const [categories, setCategories] = useState(['Star wars', 'Lord of rings']);
+const App = () => {
+  const [categories, setCategories] = useState(['Star wars', 'another movie']);
 
   return (
     <>
       <div className='container'>
         <h2>Gif Expert App</h2>
         <AddCategory setCategories={setCategories}></AddCategory>
-        <CategoriesList data={categories} />
+        {categories.map((category) => (
+          <CategoriesList categoryTitle={category} key={category} />
+        ))}
       </div>
       <Footer></Footer>
     </>
   );
-}
+};
 
 export default App;
