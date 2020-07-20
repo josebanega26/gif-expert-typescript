@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <div className='container'>
-        <h2>Gif Expert App</h2>
+        <h2>Gif-Expert with typescript</h2>
         <AddCategory setCategories={setCategories}></AddCategory>
         {categories.map((category) => (
           <CategoriesList categoryTitle={category} key={category} />

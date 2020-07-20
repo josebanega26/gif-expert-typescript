@@ -4,9 +4,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    animation: FadeIn 2s;
 }  
+
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px) ;
+    }
+    40%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 .categoryItem--container img{
     width: 100%;
+    min-height: 250px;
     max-height: 300px;
 }

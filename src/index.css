@@ -32,3 +32,11 @@ footer{
   background-color: #1b262c;
   color: white;
 }
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #cf1b1b;
+  transition: .6s;
+}

@@ -24,7 +24,7 @@ const AddCategory = ({ setCategories }: AddCategoryProps) => {
         type='text'
         onChange={changeInput}
         value={input}
-        name=''
+        placeholder='search...'
         id='search'
       />
     </form>
